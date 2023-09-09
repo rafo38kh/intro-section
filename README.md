@@ -22,20 +22,19 @@ This is a solution to the [Intro Section With Dropdown Navigation Challenge on F
 
 ### Screenshot
 
-![screenshot](./images/screenshot.png)
+![screenshot](./public/screenshot.png)
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-qILIRuiAkK](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-qILIRuiAkK)
+- Live Site URL: [https://intro-section-steel.vercel.app/](https://intro-section-steel.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- SCSS custom properties
-- CSS Flexbox
+- React
+- Tailwind CSS
 - Mobile-first workflow
 
 ## Author
