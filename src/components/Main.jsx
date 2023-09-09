@@ -10,7 +10,7 @@ export default function Main() {
   const clients = [databiz, audiophile, meet, maker];
 
   return (
-    <div className="mx-auto mt-12 flex flex-col gap-12 lg:max-w-[75rem] lg:flex-row-reverse lg:gap-0">
+    <div className="mx-auto mt-12 flex flex-col gap-12 lg:mt-0 lg:max-w-[75rem] lg:flex-row-reverse lg:gap-0">
       <img className="mt-4 lg:hidden" src={heroMobile} alt="hero-mobile-img" />
       <img
         className="hidden pt-4 lg:block lg:max-w-[30rem]"

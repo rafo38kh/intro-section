@@ -8,9 +8,10 @@ import closeIcon from "../images/icon-close-menu.svg";
 
 export default function Navigation() {
   const [toggle, setToggle] = useState(false);
+
   return (
     <>
-      <div className="w z-50 mx-auto flex w-full max-w-[110rem] items-center justify-between bg-almostWhite p-4 lg:justify-center">
+      <div className=" mx-auto flex h-16 w-full max-w-[110rem] items-center justify-between bg-almostWhite p-4 lg:justify-center lg:pt-16">
         <img className="lg:h-10" src={snap} alt="snap-logo" />
         <DesktopMenu />
         <button
@@ -20,7 +21,7 @@ export default function Navigation() {
           <img src={toggle ? closeIcon : menuIcon} alt="menu-icon" />
         </button>
       </div>
-      {toggle && <Dropdown />}
+      {toggle && <Dropdown toggle={toggle} setToggle={setToggle} />}
     </>
   );
 }

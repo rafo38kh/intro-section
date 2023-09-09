@@ -4,6 +4,7 @@ import todo from "../images/icon-todo.svg";
 import calendar from "../images/icon-calendar.svg";
 import reminders from "../images/icon-reminders.svg";
 import planning from "../images/icon-planning.svg";
+import closeIcon from "../images/icon-close-menu.svg";
 
 const menuItems = [
   {
@@ -52,12 +53,18 @@ const menuItems = [
   },
 ];
 
-export default function Dropdown() {
+export default function Dropdown({ toggle, setToggle }) {
   const [activeMenu, setActiveMenu] = useState(null);
 
   return (
     <div className="absolute flex min-h-screen w-full justify-end bg-black/70">
-      <ul className="flex w-44 flex-col items-start gap-4 bg-almostWhite pl-8 pt-4 md:w-64">
+      <ul className="flex w-44 flex-col items-start gap-4 bg-almostWhite px-4 py-4 md:w-64">
+        <button
+          className="self-end   lg:hidden"
+          onClick={() => setToggle((prevState) => !prevState)}
+        >
+          <img src={toggle && closeIcon} alt="menu-icon" />
+        </button>
         {menuItems.map((item, index) => {
           return (
             <li
@@ -107,6 +114,17 @@ export default function Dropdown() {
             </li>
           );
         })}
+        <div className="mt-12 flex w-full flex-col items-center justify-center gap-2">
+          <a
+            className="text-sm text-mediumGray transition-all duration-300 hover:text-almostBlack"
+            href="#"
+          >
+            Login
+          </a>
+          <button className="w-full rounded-2xl border border-mediumGray bg-almostWhite p-1 py-2 text-sm text-mediumGray transition-all duration-300 hover:border-black hover:bg-almostWhite  hover:text-black">
+            Register
+          </button>
+        </div>
       </ul>
     </div>
   );

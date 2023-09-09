@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="grid min-h-screen grid-rows-[1fr_auto] bg-almostWhite">
+    <div className="grid min-h-screen grid-rows-[auto_1fr_auto] items-center bg-almostWhite">
       <Navigation />
       <Main />
       <Footer />
